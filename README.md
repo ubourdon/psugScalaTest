@@ -33,5 +33,5 @@ usages "avancés"
 4.  travail sur les propriétés de listes d'objets
 5.  fixture (alternative immutable de before and after)
 6.  OneInstancePerTest Trait voir *ScalaTestOneInstancePerTestFixture*
-7.  Custom Be Property Matchers
-8.  Custom Have Property Matchers (en cours)
+7.  [Custom Be Property Matchers](http://www.scalatest.org/scaladoc/1.6.1/org/scalatest/matchers/BePropertyMatcher.html)
+8.  [Custom Have Property Matchers](http://www.scalatest.org/scaladoc/1.6.1/org/scalatest/matchers/HavePropertyMatcher.html)

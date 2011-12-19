@@ -4,14 +4,14 @@ import org.scalatest.mock.MockitoSugar
 
 import org.mockito.Mockito._
 import org.scalatest.{Tag, BeforeAndAfter, FunSuite}
-import org.scalatest.matchers.{BePropertyMatchResult, BePropertyMatcher, ShouldMatchers}
+import org.scalatest.matchers._
 
 /**
  * User: ugo
  * Date: 11/12/11
  */
 
-trait TotoCustomMatchers {
+trait TotoBeCustomMatchers {
     class TotoIsRealBePropertyMatcher extends BePropertyMatcher[Toto] {
         def apply(toto: Toto) = BePropertyMatchResult(toto.isReal, "real")
     }
@@ -19,11 +19,23 @@ trait TotoCustomMatchers {
     val real = new TotoIsRealBePropertyMatcher
 }
 
+trait TotoHaveCustomMatchers {
+    def name(expectedValue: String) = new HavePropertyMatcher[Toto, String] {
+        def apply(toto: Toto) = HavePropertyMatchResult(
+            toto.name == expectedValue,
+            "name",
+            expectedValue,
+            toto.name
+        )
+    }
+}
+
 class ScalaTestAdvancedUses extends FunSuite
     with ShouldMatchers
     with BeforeAndAfter
     with MockitoSugar
-    with TotoCustomMatchers {
+    with TotoBeCustomMatchers
+    with TotoHaveCustomMatchers {
 
     var toto: String = _
     var num: Int = _
@@ -76,12 +88,17 @@ class ScalaTestAdvancedUses extends FunSuite
         toto should be (real)
     }
 
-    ignore("custom have property matchers") {
-        /*Toto("titi", List("oula")) should have (
-            name ("titi"),
-            list (List("oula"))
-        )*/
-        // TODO : http://www.scalatest.org/scaladoc/1.6.1/org/scalatest/matchers/HavePropertyMatcher.html
+    test("custom have property matchers") {
+        val toto = Toto("titi", List("oula"))
+
+        toto should have (
+            'name ("titi"),
+            'list (List("oula"))
+        )       // même combat que pour les BePropertyMatcher
+
+        toto should have (
+            name("titi")
+        )
     }
 
     def fixture = {
@@ -89,5 +106,4 @@ class ScalaTestAdvancedUses extends FunSuite
             val num: Int = 3
         }
     }
-
 }
