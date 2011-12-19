@@ -1,10 +1,7 @@
 Paris Scala User Group - 19 décembre 2011 - Live Coding - ScalaTest
 ===================================================================
 
-L'objectif de ce live coding est de démontré les utilisations basiques de la librairie [ScalaTest](http://www.scalatest.org/)
-
-Plus précisemment, il s'agit d'un retour d'expérience de la mise en place et l'utilisation de cette
-bibliothèque de test dans un projet codé en Scala 2.9.1 mené de Juin à Décembre 2011 chez VIDAL.
+L'objectif de ce live coding est de démontrer les utilisations basiques de la librairie [ScalaTest](http://www.scalatest.org/)
 
 Le live coding sera effectué en **Scala 2.9.1**, compilé avec **SBT 0.11.1**
 
