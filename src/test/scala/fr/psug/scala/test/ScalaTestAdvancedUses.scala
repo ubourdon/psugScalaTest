@@ -30,14 +30,14 @@ trait TotoHaveCustomMatchers {
     }
 }
 
-class ScalaTestAdvancedUses /*extends FunSuite
+class ScalaTestAdvancedUses extends FunSuite
     with ShouldMatchers
     with BeforeAndAfter
     with MockitoSugar
     with TotoBeCustomMatchers
-    with TotoHaveCustomMatchers*/ {
+    with TotoHaveCustomMatchers {
 
-    /*var toto: String = _
+    var toto: String = _
     var num: Int = _
 
     before {
@@ -105,5 +105,5 @@ class ScalaTestAdvancedUses /*extends FunSuite
         new {
             val num: Int = 3
         }
-    }*/
+    }
 }
