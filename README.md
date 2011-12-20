@@ -1,4 +1,4 @@
-Paris Scala User Group - 19 décembre 2011 - Live Coding - ScalaTest
+Live Coding - ScalaTest
 ===================================================================
 
 L'objectif de ce live coding est de démontrer les utilisations basiques de la librairie [ScalaTest](http://www.scalatest.org/)

@@ -18,12 +18,12 @@ case class Toto(name: String, list: List[String] = List("yep", "yop")) {
     def isToto: Boolean = this.isInstanceOf[Toto]
 }
 
-class ScalaTestBasicUses extends FunSuite with ShouldMatchers {
+class ScalaTestBasicUses /*extends FunSuite with ShouldMatchers*/ {
 
     //TODO [Commentaire] Pourquoi j'étend FunSuite alors que c'est un trait ?
     // Parce que je vais utiliser d'autres traits ensuite qui étendent FunSuite
 
-    ignore("ce test ne va pas s'executer") {
+    /*ignore("ce test ne va pas s'executer") {
         false should be (true)
     }
 
@@ -120,5 +120,5 @@ class ScalaTestBasicUses extends FunSuite with ShouldMatchers {
         } should produce[IllegalArgumentException]
 
         exception should have ('message ("une exception"))
-    }
+    }*/
 }
