@@ -25,11 +25,11 @@ usages basiques
 usages "avancés"
 ----------------
 
-1.  BeforeAndAfter Trait
+1.  [BeforeAndAfter Trait](https://github.com/ubourdon/psugScalaTest/blob/master/src/test/scala/fr/psug/scala/test/ScalaTestAdvancedUses.scala#L43)
 2.  Tag ??? marche pas avec mon sbt pour l'instant (ou je sais pas l'utiliser plutôt :) )
-3.  Mockito
-4.  travail sur les propriétés de listes d'objets
-5.  fixture (alternative immutable de before and after)
-6.  OneInstancePerTest Trait voir *ScalaTestOneInstancePerTestFixture*
+3.  [Mockito](https://github.com/ubourdon/psugScalaTest/blob/master/src/test/scala/fr/psug/scala/test/ScalaTestAdvancedUses.scala#L64)
+4.  [travail sur les propriétés de listes d'objets](https://github.com/ubourdon/psugScalaTest/blob/master/src/test/scala/fr/psug/scala/test/ScalaTestAdvancedUses.scala#L75)
+5.  [fixture (alternative immutable de before and after)](https://github.com/ubourdon/psugScalaTest/blob/master/src/test/scala/fr/psug/scala/test/ScalaTestAdvancedUses.scala#L78)
+6.  [OneInstancePerTest Trait voir *ScalaTestOneInstancePerTestFixture*](https://github.com/ubourdon/psugScalaTest/blob/master/src/test/scala/fr/psug/scala/test/ScalaTestOneInstancePerTestFixture.scala)
 7.  [Custom Be Property Matchers](http://www.scalatest.org/scaladoc/1.6.1/org/scalatest/matchers/BePropertyMatcher.html)
 8.  [Custom Have Property Matchers](http://www.scalatest.org/scaladoc/1.6.1/org/scalatest/matchers/HavePropertyMatcher.html)
