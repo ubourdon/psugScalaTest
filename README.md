@@ -10,16 +10,17 @@ L'axe principal de la présentation sera les utilisations utiles de la biblioth�
 usages basiques
 ---------------
 
-1.  usages pour la déclaration des tests (test() and ignore())
-2.  assert de base pour FunSuite
-3.  ShouldMatchers
-4.  Matcher sur les String
-5.  Condition booléenne sur un objet
-6.  Tester la référence mémoire
-7.  Vérification sur les nombre décimaux
-8.  Utilisation des expressions logiques 'and' et 'or'
-9.  Matcher 'have' pour vérifier les propriétés d'un objet
-10. Vérification sur les exceptions
+1.  [usages pour la déclaration des tests (test() and ignore())](https://github.com/ubourdon/psugScalaTest/blob/master/src/test/scala/fr/psug/scala/test/ScalaTestBasicUses.scala#L26)
+2.  [assert de base pour FunSuite](https://github.com/ubourdon/psugScalaTest/blob/master/src/test/scala/fr/psug/scala/test/ScalaTestBasicUses.scala#L30)
+3.  [ShouldMatchers](https://github.com/ubourdon/psugScalaTest/blob/master/src/test/scala/fr/psug/scala/test/ScalaTestBasicUses.scala#L34)
+4.  [Collections](https://github.com/ubourdon/psugScalaTest/blob/master/src/test/scala/fr/psug/scala/test/ScalaTestBasicUses.scala#L46)
+5.  [Matcher sur les String](https://github.com/ubourdon/psugScalaTest/blob/master/src/test/scala/fr/psug/scala/test/ScalaTestBasicUses.scala#L56)
+6.  [Condition booléenne sur un objet](https://github.com/ubourdon/psugScalaTest/blob/master/src/test/scala/fr/psug/scala/test/ScalaTestBasicUses.scala#L71)
+7.  [Tester la référence mémoire](https://github.com/ubourdon/psugScalaTest/blob/master/src/test/scala/fr/psug/scala/test/ScalaTestBasicUses.scala#L83)
+8.  [Vérification sur les nombre décimaux](https://github.com/ubourdon/psugScalaTest/blob/master/src/test/scala/fr/psug/scala/test/ScalaTestBasicUses.scala#L88)
+9.  [Utilisation des expressions logiques 'and' et 'or'](https://github.com/ubourdon/psugScalaTest/blob/master/src/test/scala/fr/psug/scala/test/ScalaTestBasicUses.scala#L94)
+10. [Matcher 'have' pour vérifier les propriétés d'un objet](https://github.com/ubourdon/psugScalaTest/blob/master/src/test/scala/fr/psug/scala/test/ScalaTestBasicUses.scala#L109)
+11. [Vérification sur les exceptions](https://github.com/ubourdon/psugScalaTest/blob/master/src/test/scala/fr/psug/scala/test/ScalaTestBasicUses.scala#L117)
 
 usages "avancés"
 ----------------
